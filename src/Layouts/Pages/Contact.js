@@ -1,12 +1,15 @@
-import React, { Fragment } from 'react'
-import ContactSec from '../../Sections/Contact'
+import React, { Fragment, useEffect } from "react";
+import ContactSec from "../../Sections/Contact";
 
-const contact = props => {
-    return (
-        <Fragment>
-            <ContactSec {...props}/>
-        </Fragment>
-    )
-}
+const Contact = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <Fragment>
+      <ContactSec {...props} />
+    </Fragment>
+  );
+};
 
-export default contact
+export default Contact;
