@@ -12,12 +12,12 @@ const Banner = (props) => {
         <div className="row">
           <div className="col-lg-6">
             <div className="banner-content">
-              <span>podolog & beauty center</span>
-              <h2>Zadbaj o swoje stopy już dziś.</h2>
-              <p>
-                Together creeping heaven upon third dominion be upon won't
-                darkness rule behold it created good saw after she'd Our set
-                living.
+              <h2>Przywracamy komfort i zdrowie Twoich stóp.</h2>
+              <p style={{ fontSize: "20px", color: "black" }}>
+                Zapewniamy możliwości profesjonalnej diagnostyki, leczenia i
+                profilaktyki schorzeń skóry stóp i paznokci, a to wszystko
+                dzięki wieloletniemu doświadczeniu i najnowszym metodom z
+                dziedziny podologii i ortopodologii.
               </p>
               <a href="/contact" className="btn btn-round">
                 kontakt

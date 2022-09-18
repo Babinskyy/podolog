@@ -21,14 +21,18 @@ const AboutSec = (props) => {
           <div className="col-lg-10 col-md-12 m-auto">
             <div className="sec-heading">
               <img src={require("../assets/images/butterfly.png")} alt="" />
-              <span className="tagline">About our spa center</span>
-              <h3 className="sec-title">Come and you will be Inspired!</h3>
-              <p>
-                It’s the end of summer the sweltering heat makes human sweat in
-                the night and makes the plants and trees wilt even in the
-                moonlit nights. The eastern wind breeze brings an eerie feeling,
-                that the monsoon clouds are soon coming, there is a strange
-                silence in the ears, the sky gets darker and darker
+
+              <h3 className="sec-title">W czym możemy Ci pomóc?</h3>
+              <p style={{ fontSize: "20px", color: "black" }}>
+                W obszar kompetencji podologa wchodzi diagnozowanie, leczenie i
+                pielęgnacja stóp. Wydaje się to prozaiczne, ale o stopy trzeba
+                dbać tak samo jak o każdą inną część ciała. Najczęstszymi
+                problemami podologicznymi są wrastające paznokcie, nadmierne
+                zrogowacenia, odciski, pękające stopy, kurzajki i grzybica
+                paznokci. Powyższe schorzenia wymagają specjalistycznej opieki,
+                której nie otrzyma się w gabinecie kosmetycznym. Jeżeli cierpisz
+                na któreś z nich, nie zwlekaj z wizytą u specjalisty. W naszym
+                gabinecie dołożymy wszelkim starań, abyś poczuł/a się lepiej!
               </p>
             </div>
             <Link to="/about" className="btn btn-round">

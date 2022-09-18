@@ -58,11 +58,6 @@ const Procedure = (props) => {
           <div className="col-lg-8 col-md-10 m-auto">
             <div className="sec-heading">
               <h3 className="sec-title">Popularne zabiegi</h3>
-              <p>
-                Każda stopa jest inna, a my podchodzimy do klienta
-                indywidualnie. Umów się na konsultację i już dziś zadbaj o swoje
-                stopy.
-              </p>
             </div>
           </div>
         </div>
@@ -82,10 +77,14 @@ const Procedure = (props) => {
               );
             })}
           </div>
+          <div style={{ textAlign: "center" }}>
+            <a href="/blog" className="btn btn-round">
+              cennik
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    // Procedures section end
   );
 };
 
