@@ -19,9 +19,9 @@ const Banner = (props) => {
                 dzięki wieloletniemu doświadczeniu i najnowszym metodom z
                 dziedziny podologii i ortopodologii.
               </p>
-              <a href="/contact" className="btn btn-round">
+              <Link to="/contact" className="btn btn-round">
                 kontakt
-              </a>
+              </Link>
             </div>
           </div>
         </div>
