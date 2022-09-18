@@ -122,7 +122,8 @@ const Blog = (props) => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            backgroundColor: "#FEE8F3",
+            backgroundColor: "#ff817e",
+            opacity: "0.4",
             width: "100%",
             height: "50px",
             lineHeight: "50px",

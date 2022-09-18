@@ -32,7 +32,7 @@ const AboutSec = (props) => {
               </p>
             </div>
             <Link to="/about" className="btn btn-round">
-              Read more
+              O nas
             </Link>
           </div>
         </div>

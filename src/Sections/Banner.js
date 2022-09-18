@@ -19,7 +19,7 @@ const Banner = (props) => {
                 darkness rule behold it created good saw after she'd Our set
                 living.
               </p>
-              <a href="/contact" className="btn">
+              <a href="/contact" className="btn btn-round">
                 kontakt
               </a>
             </div>
