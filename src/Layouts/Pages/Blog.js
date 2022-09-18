@@ -122,16 +122,17 @@ const Blog = (props) => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            backgroundColor: "#ff817e",
-            opacity: "0.2",
+
+            backgroundColor: "rgba(255, 129, 126, .2)",
+            // opacity: "0.2",
             width: "100%",
             height: "50px",
             lineHeight: "50px",
           }}
         >
-          <span style={{ marginLeft: "30px", opacity: "1" }}>ZABIEG</span>
+          <span style={{ marginLeft: "30px" }}>ZABIEG</span>
 
-          <span style={{ marginRight: "30px", opacity: "1" }}>CENA</span>
+          <span style={{ marginRight: "30px" }}>CENA</span>
         </div>
         <ul>
           {zabiegiArray.map((e) => {
