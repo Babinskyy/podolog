@@ -22,8 +22,7 @@ const App = (props) => {
    * IF, your wish to deploing this app in a SUB-DOMAIN -> Just replace `SUB_DOMAIN_HERE` with your sub-domain name
    * ELSE, replace the `SUBDOMAIN_HERE` with just a Backslash. E.g. "/SUB_DOMAIN_HERE/" ==> "/"
    *  */
-  const basename =
-    process.env.NODE_ENV === "development" ? "/" : "/SUB_DOMAIN_HERE/";
+  const basename = process.env.NODE_ENV === "development" ? "/" : "/";
 
   return (
     <BrowserRouter basename={basename}>

@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "../axios-orders";
 import Loader from "../Components/Loader";
 import Post from "../Components/Post";
@@ -78,9 +79,9 @@ const Procedure = (props) => {
             })}
           </div>
           <div style={{ textAlign: "center" }}>
-            <a href="/blog" className="btn btn-round">
-              cennik
-            </a>
+            <Link to="/blog" className="btn btn-round">
+              Cennik
+            </Link>
           </div>
         </div>
       </div>
