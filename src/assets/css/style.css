@@ -413,7 +413,8 @@ section {
 }
 
 .service .single-service .service-hover {
-  background-color: rgba(255, 129, 126, 0.9);
+  /* background-color: rgba(255, 129, 126, 0.9); */
+  box-shadow: inset 0px 0px 50px 10px rgba(255, 129, 126, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -29,48 +29,43 @@ const Service = (props) => {
         responsive={breakPoints}
       >
         <div className="single-service">
-          <img src={require("../assets/images/salon/salon2.jpeg")} alt="" />
+          <img src={require("../assets/images/salon/salon11.jpg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
 
         <div className="single-service">
           <img src={require("../assets/images/salon/salon4.jpg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
         <div className="single-service">
-          <img src={require("../assets/images/salon/salon11.jpg")} alt="" />
+          <img src={require("../assets/images/salon/salon6.jpg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
 
         <div className="single-service">
           <img src={require("../assets/images/salon/salon5.jpg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
 
         <div className="single-service">
-          <img src={require("../assets/images/salon/salon6.jpg")} alt="" />
+          <img src={require("../assets/images/salon/salon2.jpeg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
         <div className="single-service">
           <img src={require("../assets/images/salon/salon7.jpg")} alt="" />
           <div className="service-hover">
-            <img src={require("../assets/images/icons/1.png")} alt="" />
-            <span>Body Treatment</span>
+            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
+            {/* <span>Body Treatment</span> */}
           </div>
         </div>
       </OwlCarousel>
