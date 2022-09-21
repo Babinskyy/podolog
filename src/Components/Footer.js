@@ -8,7 +8,7 @@ const footer = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <Link to="index.html" className="logo foo-logo">
+            <Link to="/" className="logo foo-logo">
               <img src={require("../assets/images/logo1.png")} alt="" />
             </Link>
             <nav className="foo-nav">
