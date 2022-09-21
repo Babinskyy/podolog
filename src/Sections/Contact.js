@@ -38,10 +38,15 @@ const Contact = (props) => {
           <div className="col-lg-8 col-md-10 m-auto">
             <div className="sec-heading">
               <h3 className="sec-title">Zostańmy w kontakcie</h3>
-              <p>
-                Zadzwoń, a dowiesz się czy wizyta podologiczna jest dla Ciebie!
+              <p style={{ textAlign: "left" }}>
+                <p style={{ textAlign: "center" }}>
+                  Nasz salon znajduje się w samym sercu Sopotu
+                </p>
                 <br />
-                Zadbaj o swoje zdrowie już dzisiaj.
+                - 100 metrów od słynnego Monciaka
+                <br /> - 50 metrów od podziemnego parkingu pod dworcem kolejowym{" "}
+                <br /> - przystanek autobusowy znajduje się przy samych drzwiach
+                wejściowych do salonu. <br />
               </p>
             </div>
           </div>
