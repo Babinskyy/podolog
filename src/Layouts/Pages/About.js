@@ -10,8 +10,8 @@ const About = () => {
   return (
     <Fragment>
       <AboutSec />
-      <Team />
-      <Testimonial />
+      {/* <Team />
+      <Testimonial /> */}
     </Fragment>
   );
 };

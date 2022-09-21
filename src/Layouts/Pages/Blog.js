@@ -118,6 +118,23 @@ const Blog = (props) => {
             lineHeight: "50px",
           }}
         >
+          <span
+            style={{ fontWeight: "500", color: "red", textAlign: "center" }}
+          >
+            Strona internetowa jest w budowie, widoczne ceny są przykładowe. W
+            celu poznania rzeczywistej oferty, prosimy o kontakt telefoniczny.
+          </span>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+
+            width: "100%",
+            height: "50px",
+            lineHeight: "50px",
+          }}
+        >
           <span style={{ fontWeight: "500" }}>
             Cena może ulec zmianie w zależności od skomplikowania zabiegu.
           </span>
