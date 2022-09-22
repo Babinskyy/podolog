@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../../Sections/Banner";
 import AboutSec from "../../Sections/About";
 import Service from "../../Sections/Service";
@@ -9,7 +9,10 @@ import Appointment from "../../Sections/Appointment";
 import Blog from "./Blog";
 import Contact from "../../Sections/Contact";
 
-const home = (props) => {
+const Home = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <Banner />
@@ -22,4 +25,4 @@ const home = (props) => {
   );
 };
 
-export default home;
+export default Home;

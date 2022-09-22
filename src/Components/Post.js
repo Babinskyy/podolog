@@ -9,17 +9,7 @@ const post = (props) => {
           src={require("../assets/images/post/" + props.id + ".jpg")}
           alt=""
         />
-        <h4>
-          <Link
-            style={{
-              height: "53px",
-              display: "block",
-            }}
-            to={`/blog/${props.id}`}
-          >
-            {props.title}
-          </Link>
-        </h4>
+        <h4>{props.title}</h4>
         <p>{props.excerpt}</p>
       </article>
     </div>

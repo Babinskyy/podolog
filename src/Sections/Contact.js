@@ -62,14 +62,14 @@ const Contact = (props) => {
                 </address>
                 <address>
                   <span className="ti-email"></span>
-                  <a href="mailto:example@leospa.com">
+                  <a href="mailto:kontakt@podologsopot.pl">
                     kontakt@podologsopot.pl
                   </a>
                   <br />
                 </address>
                 <address>
                   <span className="ti-tablet"></span>
-                  <a href="tel:+0236523653265(02)">tel: +48 533 647 946</a>
+                  <a href="tel:+48 533 647 946">tel: +48 533 647 946</a>
                 </address>
               </div>
               <div className="col-md-7 offset-md-1 mt-4 mt-md-0">
