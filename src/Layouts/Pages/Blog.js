@@ -107,7 +107,7 @@ const Blog = (props) => {
         </div>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div
           style={{
             display: "flex",
@@ -185,7 +185,7 @@ const Blog = (props) => {
             );
           })}
         </ul>
-      </div>
+      </div> */}
     </section>
     // Procedures section end
   );
