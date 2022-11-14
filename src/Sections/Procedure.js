@@ -38,16 +38,16 @@ const Procedure = (props) => {
 
   const proceduresObject = [
     {
-      title: "Pedicure podologiczny",
-      excerpt: "od 200zł",
+      title: "Zabieg podologiczny",
+      excerpt: "od 120zł",
     },
     {
-      title: "Usuwanie odcisków",
-      excerpt: "od 150zł",
+      title: "Usunięcie odcisku / modzela",
+      excerpt: "od 30zł",
     },
     {
       title: "Konsultacja podologiczna",
-      excerpt: "w cenie zabiegu",
+      excerpt: "100zł",
     },
   ];
 

@@ -39,7 +39,10 @@ const footer = (props) => {
             </div>
             <p className="copyright">
               &copy; COPYRIGHT {`${new Date().getFullYear()} `}
-              <a>geeko.software</a> ALL RIGHTS RESERVED.
+              <a href="https://geeko.software/" target="_blank">
+                geeko.software
+              </a>{" "}
+              ALL RIGHTS RESERVED.
             </p>
           </div>
         </div>
