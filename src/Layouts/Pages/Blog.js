@@ -422,7 +422,7 @@ const Blog = (props) => {
             celu poznania rzeczywistej oferty, prosimy o kontakt telefoniczny.
           </span>
         </div> */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -435,7 +435,7 @@ const Blog = (props) => {
           <span style={{ fontWeight: "500" }}>
             Cena może ulec zmianie w zależności od skomplikowania zabiegu.
           </span>
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
