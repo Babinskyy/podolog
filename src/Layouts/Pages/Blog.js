@@ -20,56 +20,353 @@ const Blog = (props) => {
         console.log(err);
       });
   }, []);
+
   const zabiegiArray = [
-    [
-      "Konsultacja podologiczna",
-      "Diagnoza dolegliwości w obrębie stóp (na skórze i paznokciach), analiza układu mięśniowo-kostnego w stopie, rekomendacja odpowiednich form terapii, analiza skóry z dopasowaniem preparatu, zalecenia odnośnie doboru odpowiedniego obuwia i codziennej pielęgnacji.",
-      "od 150 ZŁ",
-    ],
-    [
-      "Obcięcie i oszlifowanie paznokci, oczyszczenie wałów okołopaznokciowych.",
-      "Diagnoza podologiczna, skrócenie paznokci, oszlifowanie płytek paznokciowych, oczyszczenie wałów paznokciowych ze zrogowaceń. Zalecenia podologiczne i pielęgnacyjne.",
-      "140 ZŁ",
-    ],
-    [
-      "Nadmierne zrogowacenia (modzele)",
-      "Rozpoznanie zmiany/ zmian, przedstawienie szczegółowego planu terapii, przeprowadzenie zabiegu, aplikacja odpowiednich preparatów i/ lub materiałów odciążających zalecenia pozabiegowe.",
-      "170-270 ZŁ",
-    ],
-    [
-      "Odcisk",
-      "Rozpoznanie zmiany lub zmian, dobór najlepszej metody, przedstawienie szczegółowego planu i cen kolejnych wizyt, rozpoczęcie terapii (przeprowadzenie zabiegu, aplikacja odpowiednich preparatów i/ lub materiałów odciążających, zalecenia pozabiegowe)",
-      "200-300 ZŁ",
-    ],
-    [
-      "Rekonstrukcja paznokcia z oczyszczeniem",
-      "Diagnoza podologiczna, dobór odpowiedniej metody rekonstrukcji, przedstawienie szczegółowego planu, wykonanie zabiegu. Zalecenia pielęgnacyjne.",
-      "od 330 ZŁ",
-    ],
-    [
-      "Brodawka wirusowa (kurzajka)",
-      "Rozpoznanie zmiany lub zmian, dobór najlepszej metody, przedstawienie szczegółowego planu i cen kolejnych wizyt, rozpoczęcie terapii (przeprowadzenie zabiegu, aplikacja odpowiednich preparatów i/ lub materiałów odciążających, zalecenia pozabiegowe)",
-      "180 ZŁ",
-    ],
-    [
-      "Założenie klamry ortonyksyjnej",
-      "Diagnoza podologiczna, dobór odpowiedniego systemu klamer, przedstawienie szczegółowego planu, rozpoczęcie terapii.",
-      "250 ZŁ",
-    ],
+    {
+      titles: [
+        {
+          title: "Konsultacja podologiczna",
+          price: "100,-",
+        },
+      ],
+      descriptions: [],
+    },
+    {
+      titles: [
+        {
+          title: "Podstawowy zabieg podologiczny",
+          price: "120,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje pedicure kosmetyczny, skrócenie paznokci, opracowanie skórek, usunięcie fizjologicznych zmian za pomocą frezarki podologicznej)",
+          price: "",
+        },
+        {
+          description: "- z malowaniem lakierem tradycyjnym",
+          price: "140,-",
+        },
+        {
+          description: "- z malowaniem lakierem hybrydowym",
+          price: "180,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Specjalistyczny zabieg podologiczny",
+          price: "170,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje podstawowy zabieg podologiczny, usunięcie odcisku, modzela i zrogowaceń)",
+          price: "",
+        },
+        {
+          description: "- z malowaniem lakierem tradycyjnym",
+          price: "190,-",
+        },
+        {
+          description: "- z malowaniem lakierem hybrydowym",
+          price: "220,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Rozszerzony zabieg podologiczny",
+          price: "250,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje podstawowy i specjalistyczny zabieg podologiczny; opracowanie stopy z wypryskiem modzelowatym, rogowcem, zmianami łuszczycowymi, licznymi odciskami i modzelami, głębokimi rozpadlinami, bolesnymi zmianami hiperkeratotycznymi; wykonanie odciążeń, założenie opatrunków)",
+          price: "250,-",
+        },
+        {
+          description: "- z malowaniem lakierem tradycyjnym",
+          price: "270,-",
+        },
+        {
+          description: "- z malowaniem lakierem hybrydowym",
+          price: "300,-",
+        },
+        {
+          description:
+            "*lakier tradycyjny i lakier hybrydowy nakładamy tylko gdy nie ma ku temu przeciwwskazań",
+          price: "",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Opracowanie tylko przodostopia",
+          price: "100,-",
+        },
+      ],
+      descriptions: [
+        {
+          description: "(cena obejmuje obcięcie paznokci, opracowanie skórek)",
+          price: "",
+        },
+        {
+          description: "- z malowaniem lakierem tradycyjnym",
+          price: "120,-",
+        },
+        {
+          description: "- z malowaniem lakierem hybrydowym",
+          price: "150,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Opracowanie pękających pięt",
+          price: "150,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje usunięcie zrogowaceń, pęknięć i rozpadlin, założenie specjalistycznego opatrunku)",
+          price: "",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Obcięcie i oczyszczenie paznokci zmienionych chorobowo",
+          price: "100 - 200,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(zakażenia bakteryjne, grzybicze, onycholiza, paznokcie przerośnięte/dystroficzne)",
+          price: "",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Usunięcie odcisku / modzela",
+          price: "80,-",
+        },
+      ],
+      descriptions: [
+        {
+          description: "- każdy kolejny na tej samej wizycie",
+          price: "30,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Terapia brodawek wirusowych*",
+          price: "100 - 200,-",
+        },
+      ],
+      descriptions: [
+        {
+          description: "a) brodawki pojedyncze",
+          price: "",
+        },
+        {
+          description:
+            "- pierwsza wizyta (rozpoczęcie terapii: oczyszczenie, diagnoza, wybranie metody terapii, zalecenia pozabiegowe)",
+          price: "130,-",
+        },
+        {
+          description: "- kolejna wizyta (kontynuacja terapii)",
+          price: "100,-",
+        },
+        {
+          description: "b) brodawki mnogie",
+          price: "",
+        },
+        {
+          description:
+            "- pierwsza wizyta (rozpoczęcie terapii: oczyszczenie, diagnoza, wybranie metody terapii, zalecenia pozabiegowe)",
+          price: "180,-",
+        },
+        {
+          description: "- kolejna wizyta (kontynuacja terapii)",
+          price: "130,-",
+        },
+        {
+          description: "*do cen wliczony jest opatrunek i odciążenie",
+          price: "",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Usunięcie krwiaka podpaznokciowego",
+          price: "150,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje odbarczenie krwiaka, zabezpieczenie pola zabiegowego i założenie opatrunku)",
+          price: "",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Protetyka paznokcia",
+          price: "100,-",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "(cena obejmuje oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji)",
+          price: "",
+        },
+        {
+          description: "Protetyka do usługi",
+          price: "50,-",
+        },
+        {
+          description: "Ściągnięcie masy wykonanej w innym gabinecie",
+          price: "50,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Terapia wrastającego paznokcia",
+          price: "",
+        },
+      ],
+      descriptions: [
+        {
+          description:
+            "- korekta (usunięcie drażniącego elementu, założenie opatrunku)",
+          price: "130,-",
+        },
+        {
+          description: "- założenie klamry ortonyksyjnej",
+          price: "",
+        },
+        {
+          description:
+            "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 - na jeden paznokieć",
+          price: "190,-",
+        },
+        {
+          description:
+            "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 - na dwa paznokcie na tej samej wizycie",
+          price: "350,-",
+        },
+        {
+          description: "- przełożenie klamry ortonyksyjnej",
+          price: "100,-",
+        },
+        {
+          description: "- wizyta kontrolna bez przełożenia klamry",
+          price: "70,-",
+        },
+        {
+          description: "- założenie rurki Sulci-Protector",
+          price: "80,-",
+        },
+        {
+          description:
+            "- zakończenie terapii - ściągnięcie klamry ortonyksyjnej",
+          price: "100,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Tamponada i opatrunki",
+          price: "",
+        },
+      ],
+      descriptions: [
+        {
+          description: "- założenie tamponady z preparatem",
+          price: "60,-",
+        },
+        {
+          description: "- założenie tamponady z preparatem do usługi",
+          price: "20,-",
+        },
+        {
+          description: "- opatrunek",
+          price: "30,-",
+        },
+      ],
+    },
+    {
+      titles: [
+        {
+          title: "Dodatkowe odciążenia",
+          price: "20 - 80,-",
+        },
+      ],
+      descriptions: [],
+    },
+    {
+      titles: [
+        {
+          title: "Wkładki PWO15 odciążające",
+          price: "170,-",
+        },
+      ],
+      descriptions: [],
+    },
+    {
+      titles: [
+        {
+          title: "Taping podologiczny (tzw. plastrowanie) do zabiegu",
+          price: "20 - 50,-",
+        },
+      ],
+      descriptions: [],
+    },
+    {
+      titles: [
+        {
+          title: "Pobranie materiału do badań laboratoryjnych",
+          price: "150 - 300,-",
+        },
+      ],
+      descriptions: [],
+    },
   ];
 
   const proceduresObject = [
     {
-      title: "Pedicure podologiczny",
-      excerpt: "od 200zł",
+      title: "Zabieg podologiczny",
+      excerpt: "od 120zł",
     },
     {
-      title: "Usuwanie odcisków",
-      excerpt: "od 150zł",
+      title: "Usunięcie odcisku / modzela",
+      excerpt: "od 30zł",
     },
     {
       title: "Konsultacja podologiczna",
-      excerpt: "w cenie zabiegu",
+      excerpt: "100zł",
     },
   ];
 
@@ -107,8 +404,8 @@ const Blog = (props) => {
         </div>
       </div>
 
-      {/* <div className="container">
-        <div
+      <div className="container">
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -124,7 +421,7 @@ const Blog = (props) => {
             Strona internetowa jest w budowie, widoczne ceny są przykładowe. W
             celu poznania rzeczywistej oferty, prosimy o kontakt telefoniczny.
           </span>
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
@@ -144,7 +441,7 @@ const Blog = (props) => {
             display: "flex",
             justifyContent: "space-between",
 
-            backgroundColor: "rgba(255, 129, 126, .2)",
+            backgroundColor: "rgba(255, 129, 126, .1)",
             // opacity: "0.2",
             width: "100%",
             height: "50px",
@@ -158,36 +455,71 @@ const Blog = (props) => {
         <ul>
           {zabiegiArray.map((e) => {
             return (
-              <li style={{ borderBottom: "1px solid #E9E8E9" }}>
+              <li
+                style={{ borderBottom: "1px solid #E9E8E9" }}
+                className="everyEven"
+              >
                 <div
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
                   <div
                     style={{
-                      width: "80%",
                       paddingTop: "20px",
                       paddingBottom: "20px",
+                      width: "98%",
                     }}
                   >
-                    <span style={{ padding: "20px", fontWeight: "500" }}>
-                      {e[0]}
+                    <span
+                      style={{
+                        padding: "20px",
+                        fontWeight: "500",
+                      }}
+                    >
+                      {e.titles.map((e) => {
+                        return (
+                          <span>
+                            {e.title}
+                            <span style={{ float: "right", fontWeight: "300" }}>
+                              {e.price}
+                            </span>
+                          </span>
+                          // <span></span>
+                        );
+                      })}
                     </span>
                     <br />
-                    <span style={{ display: "block", marginLeft: "20px" }}>
-                      {e[1]}
+                    <span
+                      style={{
+                        display: "block",
+                        marginLeft: "20px",
+                      }}
+                    >
+                      <ul>
+                        {e.descriptions.map((e) => {
+                          return (
+                            <li>
+                              <span>{e.description}</span>
+
+                              <span
+                                style={{
+                                  float: "right",
+                                }}
+                              >
+                                {e.price}
+                              </span>
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </span>
-                  </div>
-                  <div style={{ alignSelf: "center", marginRight: "15px" }}>
-                    {e[2]}
                   </div>
                 </div>
               </li>
             );
           })}
         </ul>
-      </div> */}
+      </div>
     </section>
-    // Procedures section end
   );
 };
 

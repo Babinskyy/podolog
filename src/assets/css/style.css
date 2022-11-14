@@ -13,7 +13,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 /* @import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -305,7 +305,7 @@ section {
 .banner span {
   color: #ff817e;
   display: block;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -447,7 +447,7 @@ section {
 .service .single-service .service-hover span {
   color: #fff;
   display: block;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -521,7 +521,7 @@ section {
 
 .testimonial .single-tst p {
   color: #263a41;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 35px;
@@ -1342,4 +1342,8 @@ section {
 .appointment-form select:focus,
 .appointment-form input:focus {
   outline: 0;
+}
+
+.everyEven:nth-child(even) {
+  background-color: rgba(255, 129, 126, 0.1);
 }
