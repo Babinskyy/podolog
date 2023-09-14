@@ -6,7 +6,7 @@ const Banner = (props) => {
     // Banner section start
     <section className="banner">
       <div className="spa-img">
-        <img src={require("../assets/images/salon/Julia.png")} alt="" />
+        <img src={require("../assets/images/salon/julia-sharp.png")} alt="" />
       </div>
       <div className="container">
         <div className="row">

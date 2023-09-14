@@ -56,7 +56,7 @@ const Service = (props) => {
         </div>
 
         <div className="single-service">
-          <img src={require("../assets/images/salon/salon2.jpeg")} alt="" />
+          <img src={require("../assets/images/salon/salon31.jpg")} alt="" />
           <div className="service-hover">
             {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
