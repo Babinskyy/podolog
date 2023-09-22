@@ -57,8 +57,7 @@ const Contact = (props) => {
               <div className="col-md-4">
                 <address>
                   <span className="ti-map-alt"></span>
-                  Kościuszki 10, Sopot <br />
-                  <br />
+                  <a href="https://www.google.com/maps/place/'''Dotyk+pi%C4%99kna%22+-+gabinet+kosmetyczno-podologiczny'/@54.4415287,18.5636371,3a,75y,253.95h,90.24t/data=!3m6!1e1!3m4!1sfSIRvD9HcTGCruei7GSC9A!2e0!7i16384!8i8192!4m16!1m9!3m8!1s0x46fd0a910526f167:0x362a88f7760008c8!2sTadeusza+Ko%C5%9Bciuszki+10,+81-759+Sopot,+Poland!3b1!8m2!3d54.4415567!4d18.5633252!10e5!16s%2Fg%2F11c5ll9hgf!3m5!1s0x46fd0bf8bdbd8217:0xf990f0b03775f02e!8m2!3d54.4415567!4d18.5633252!16s%2Fg%2F11lkh1qtvv?entry=ttu" target="_blank">Kościuszki 10, Sopot </a><br/>
                 </address>
                 <address>
                   <span className="ti-email"></span>

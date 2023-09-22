@@ -794,6 +794,7 @@ section {
   display: block;
   font-size: 14px;
   font-weight: 400;
+  transform: translate(0, 11px);
 }
 
 .contact address a:hover {
