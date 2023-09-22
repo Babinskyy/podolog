@@ -35,8 +35,8 @@ const AboutSec = (props) => {
                 gabinecie dołożymy wszelkim starań, abyś poczuł/a się lepiej!
               </p>
             </div>
-            <Link to="/about" className="btn btn-round">
-              O nas
+            <Link to="/contact" className="btn btn-round">
+              Kontakt
             </Link>
           </div>
         </div>
