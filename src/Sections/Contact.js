@@ -61,8 +61,8 @@ const Contact = (props) => {
                 </address>
                 <address>
                   <span className="ti-email"></span>
-                  <a href="mailto:kontakt@podologsopot.pl">
-                    kontakt@podologsopot.pl
+                  <a href="mailto:beatak.k13@wp.pl">
+                    beatak.k13@wp.pl
                   </a>
                   <br />
                 </address>
