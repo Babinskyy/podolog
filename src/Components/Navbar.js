@@ -25,7 +25,12 @@ const Navbar = (props) => {
         <div className="row align-items-end">
           <div className="col-md-3">
             <NavLink to="/" className="logo">
-              <img src={require("../assets/images/logo1.png")} alt="" />
+              {/* <img src={require("../assets/images/logo1.png")} alt="" /> */}
+              <img
+                src={require("../assets/images/podolog_logo.png")}
+                alt="logo"
+                style={{ height: "85px", width: "85px" }}
+              />
             </NavLink>
           </div>
           <div className={"col-md-9" + right}>

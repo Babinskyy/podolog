@@ -176,6 +176,10 @@ section {
   font-size: 42px;
   margin-bottom: 32px;
 }
+.footer .foo-nap {
+  width: 500px;
+  flex-direction: row;
+}
 
 @media screen and (max-width: 767px) {
   .sec-heading .sec-title {
@@ -228,6 +232,10 @@ section {
     right: 0;
     top: -30px;
     outline: 0;
+  }
+  .footer .foo-nap {
+    width: 200px;
+    flex-direction: column;
   }
 }
 
@@ -1053,7 +1061,10 @@ section {
 
 .footer {
   background-color: #fff9f8;
-  padding: 80px 0 60px;
+  padding: 40px 0 60px;
+}
+.footer p span.address:hover {
+  color: blue;
 }
 
 .footer .foo-logo {
@@ -1345,6 +1356,6 @@ section {
   outline: 0;
 }
 
-.everyEven:nth-child(even) {
+.everyEven:nth-child(odd) {
   background-color: rgba(255, 129, 126, 0.1);
 }

@@ -20,13 +20,36 @@ const Blog = (props) => {
         console.log(err);
       });
   }, []);
-
+  const proceduresObject = [
+    {
+      title: "Zabieg podologiczny",
+      excerpt: "od 120 zł",
+    },
+    {
+      title: "Usunięcie odcisku",
+      excerpt: "od 30 zł",
+    },
+    {
+      title: "Konsultacja podologiczna",
+      excerpt: "od 0 zł",
+    },
+  ];
   const zabiegiArray = [
     {
       titles: [
         {
           title: "Konsultacja podologiczna",
           price: "100,-",
+          time: "30 min",
+        },
+      ],
+      descriptions: [],
+    },
+    {
+      titles: [
+        {
+          title: "Konsultacja podologiczna przy umówionym zabiegu",
+          price: "Bezpłatna",
         },
       ],
       descriptions: [],
@@ -355,18 +378,332 @@ const Blog = (props) => {
     },
   ];
 
-  const proceduresObject = [
+  const proceduresList = [
     {
-      title: "Zabieg podologiczny",
-      excerpt: "od 120zł",
-    },
-    {
-      title: "Usunięcie odcisku / modzela",
-      excerpt: "od 30zł",
+      title: "title",
+      description: "Zabiegi",
+      price: [],
+      time: "",
     },
     {
       title: "Konsultacja podologiczna",
-      excerpt: "100zł",
+      description: "",
+      price: ["100 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Konsultacja podologiczna przy umówionym zabiegu",
+      description: "",
+      price: ["Bezpłatna"],
+      time: "",
+    },
+    {
+      title: "Opracowanie paznokci zdrowych u stóp",
+      description:
+        "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek)",
+      price: ["80 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Opracowanie paznokci przerośniętych i zdeformowanych",
+      description: "(skrócenie paznokci i nadanie im kształtu)",
+      price: ["1 - 3 paznokcie – 150 zł", "powyżej 3 paznokci – 200 zł "],
+      time: "90 min",
+    },
+    {
+      title: "title",
+      description: "Pedicure Frezarkowy",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Pedicure express",
+      description:
+        "(opracowanie zrogowaceń podeszwy stopy frezarką, omówienie domowej pielęgnacji , aplikacja kremu)",
+      price: ["100 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Pedicure kosmetyczny (frezarkowy) bez malowania",
+      description:
+        "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek, opracowanie podeszwy stopy frezarką, omówienie pielęgnacji domowej, aplikacja kremu)",
+      price: ["130 zł"],
+      time: "60 min",
+    },
+    {
+      title: "title",
+      description: "Pedicure Podologiczny",
+      price: [],
+      time: "",
+    },
+    {
+      title:
+        "Pedicure podologiczny - pierwsza wizyta z konsultacją ortopodologiczną",
+      description:
+        "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek,  opracowanie patologicznych zrogowaceń podeszwy -usunięcie odcisków i modzeli za pomocą narzędzi podologicznych, omówienie pielęgnacji domowej, aplikacja kremu)",
+      price: ["240 zł"],
+      time: "2 godz",
+    },
+    {
+      title: "Pedicure podologiczny - kolejna wizyta",
+      description:
+        "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek, opracowanie patologicznych zrogowaceń podeszwy – usunięcie odcisków i modzeli za pomocą narzędzi podologicznych, omówienie pielęgnacji domowej, aplikacja kremu, zalecenia pozabiegowe)",
+      price: ["200 zł"],
+      time: "2 godz",
+    },
+    {
+      title: "Pedicure podologiczny rozszerzony",
+      description:
+        "Pedicure podologiczny podstawowy plus opracowanie dużych hiperkeratoz w tym zaawansowanej keratolizy dziobatej, rogowca, liszaja, odcisków mnogich , modzele (duże powierzchnie)",
+      price: ["2 godz – 250zł", "ponad 2 godz – 350 zł"],
+      time: "",
+    },
+    {
+      title:
+        "Malowanie paznokci lakierem tradycyjnym jeśli nie ma przeciwskazań",
+      description: "",
+      price: ["30zł", "do zabiegu +20 zł"],
+      time: "",
+    },
+    {
+      title:
+        "Malowanie paznokci lakierem hybrydowym jeśli nie ma przeciwskazań",
+      description: "",
+      price: ["70zł", "do zabiegu +50 zł"],
+      time: "",
+    },
+    {
+      title: "Ściągnięcie hybrydy z innego salonu",
+      description: "",
+      price: ["do zabiegu +30 zł"],
+      time: "",
+    },
+    {
+      title: "title",
+      description:
+        "Paznokcie pourazowe i chorobowe (cena obejmuje jeden paznokieć)",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Oczyszczanie paznokci krwiak – pierwsza wizyta",
+      description:
+        "rozpoczęcie terapii: odbarczenie, aplikacja preparatu, zalecenia po zabiegowe",
+      price: ["150 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Oczyszczanie paznokci krwiak – kolejna wizyta",
+      description:
+        "kontynuacja terapii: oczyszczenie, aplikacja preparatu, zalecenia po zabiegowe",
+      price: ["120 zł"],
+      time: "30 min",
+    },
+    {
+      title:
+        "Oczyszczanie paznokci zmienionych chorobowo – Pseudomonas, grzybica, onycholiza – pierwsza wizyta",
+      description:
+        "rozpoczęcie terapii: oczyszczenie, aplikacja preparatu, zalecenia po zabiegowe",
+      price: ["1-3 paznokcie 150 zł", "powyżej 3 paznokci 200 zł"],
+      time: "60 min",
+    },
+    {
+      title:
+        "Oczyszczanie paznokci zmienionych chorobowo – Pseudomonas, grzybica, onycholiza – kolejna wizyta",
+      description:
+        "kontynuacja terapii: oczyszczenie, aplikacja preparatu, zalecenia po zabiegowe",
+      price: ["120 zł"],
+      time: "30 min",
+    },
+    {
+      title: "title",
+      description: "Brodawki wirusowe HPV / Kurzajki",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Terapia brodawki wirusowej – pierwsza wizyta",
+      description:
+        "rozpoczęcie terapii: oczyszczenie, diagnoza, wybór metody leczenia, zalecenia po zabiegowe",
+      price: ["150 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Terapia brodawki wirusowej – kolejna wizyta",
+      description:
+        "Kontynuacja terapii: oczyszczenie, ocena, wykonanie wybranej metody, zalecenia po zabiegowe",
+      price: ["110 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Terapia brodawki wirusowej mnogiej – pierwsza wizyta",
+      description:
+        "rozpoczęcie terapii: oczyszczenie, diagnoza, wybór metody leczenia, zalecenia po zabiegowe",
+      price: ["200 zł"],
+      time: "60 min",
+    },
+    {
+      title: "Terapia brodawki wirusowej mnogiej – kolejna wizyta",
+      description:
+        "Kontynuacja terapii: oczyszczenie, ocena, wykonanie wybranej metody, zalecenia po zabiegowe",
+      price: ["150 zł"],
+      time: "60 min",
+    },
+    {
+      title: "title",
+      description:
+        "Paznokcie wkręcające / wrastające - terapia klamrą ortonyksyjną",
+      price: [],
+      time: "",
+    },
+    {
+      title:
+        "Założenie klamry na 1 paznokieć  - rozpoczęcie terapii klamrą ortonyksyjną",
+      description: "",
+      price: ["200 zł"],
+      time: "40 min",
+    },
+    {
+      title:
+        "Założenie klamry na 2 paznokcie - rozpoczęcie terapii klamrą ortonyksyjną",
+      description: "",
+      price: ["380 zł"],
+      time: "70 min",
+    },
+    {
+      title:
+        "Kontrola w trakcie terapii wrastającego paznokcia / przełożenie klamry",
+      description: "",
+      price: ["120 zł"],
+      time: "30 min",
+    },
+    {
+      title:
+        "Ściągnięcie klamry i opracowanie paznokcia – zakończenie terapii wrastających paznokci",
+      description: "",
+      price: ["100 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Usunięcie wrastającego fragmentu paznokcia",
+      description:
+        "opracowanie paznokcia i rany, rozpoczęcie leczenia wrastającego paznokcia, usunięcie wrastającego fragmentu, aplikacja opatrunku specjalistycznego",
+      price: ["200 zł"],
+      time: "60 min",
+    },
+    {
+      title:
+        "Kontrola / zmiana opatrunku po usunięciu wrastającego fragmentu paznokcia ",
+      description:
+        "usunięcie starego opatrunku, oczyszczenie, aplikacja opatrunku specjalistycznego, kontynuacja leczenia ",
+      price: ["50 zł"],
+      time: "30 min",
+    },
+    {
+      title: "title",
+      description:
+        "Protetyka płytki paznokcia - metoda żelowa, akrylowa, anguisan",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Protetyka paznokcia – pierwsza wizyta",
+      description:
+        "Oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji",
+      price: ["100 zł"],
+      time: "30 min",
+    },
+    {
+      title: "Protetyka paznokcia metodą Unguisan",
+      description: "",
+      price: ["1 paznokieć - 100zł"],
+      time: "40 min",
+    },
+    {
+      title: "Protetyka paznokcia – do usługi",
+      description:
+        "Oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji",
+      price: ["50 zł"],
+      time: "15 min",
+    },
+    {
+      title: "title",
+      description: "Tamponada",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Założenie tamponady z preparatem do usługi",
+      description: "Wizyta połączona z innym zabiegiem w obrębie stóp",
+      price: ["30 zł"],
+      time: "15 min",
+    },
+    {
+      title: "Założenie tamponady z preparatem",
+      description:
+        "Specjalistyczny materiał odseparowujący płytkę paznokciową od wałów ",
+      price: ["100 zł"],
+      time: "30 min",
+    },
+    {
+      title: "title",
+      description: "Odciski",
+      price: [],
+      time: "",
+    },
+    {
+      title:
+        "Usunięcie odcisków i modzeli  + założenie opatrunku i  odciążenia",
+      description: "",
+      price: [
+        "1 odcisk - 80 zł",
+        "15 min",
+        "1-3 odciski – 120 zł",
+        "powyżej 3 odcisków - 200 zł",
+      ],
+      time: "",
+    },
+    {
+      title: "title",
+      description: "Inne",
+      price: [],
+      time: "",
+    },
+    {
+      title: "Tejping podologiczny do usługi",
+      description: "",
+      price: ["50 zł"],
+      time: "",
+    },
+    {
+      title: "Indywidualne ortezy silikonowe",
+      description: "",
+      price: ["mała 40 zł", "duża 60 zł"],
+      time: "",
+    },
+    {
+      title: "Indywidualne wkładki odciążające PWO 15",
+      description: "",
+      price: ["170 zł para"],
+      time: "",
+    },
+    {
+      title: "Badanie Pedobarograficzne",
+      description: "Ze skanem stóp, omówienie terapii",
+      price: ["200 zł"],
+      time: "",
+    },
+    {
+      title: "Badanie Mykologiczne",
+      description: "(hodowla + mikroskop)",
+      price: ["150 zł"],
+      time: "",
+    },
+    {
+      title: "Badanie Bakteriologiczne",
+      description: "",
+      price: ["130 zł"],
+      time: "",
     },
   ];
 
@@ -376,7 +713,7 @@ const Blog = (props) => {
         <div className="row">
           <div className="col-lg-8 col-md-10 m-auto">
             <div className="sec-heading">
-              <h3 className="sec-title">Popularne zabiegi</h3>
+              <h3 className="sec-title">Cennik</h3>
               <p>
                 Każda stopa jest inna, a my podchodzimy do klienta
                 indywidualnie. Umów się na konsultację i już dziś zadbaj o swoje
@@ -408,52 +745,111 @@ const Blog = (props) => {
         {/* <div
           style={{
             display: "flex",
-            justifyContent: "center",
-
-            width: "100%",
-            height: "50px",
-            lineHeight: "50px",
-          }}
-        >
-          <span
-            style={{ fontWeight: "500", color: "red", textAlign: "center" }}
-          >
-            Strona internetowa jest w budowie, widoczne ceny są przykładowe. W
-            celu poznania rzeczywistej oferty, prosimy o kontakt telefoniczny.
-          </span>
-        </div> */}
-        {/* <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-
-            width: "100%",
-            height: "50px",
-            lineHeight: "50px",
-          }}
-        >
-          <span style={{ fontWeight: "500" }}>
-            Cena może ulec zmianie w zależności od skomplikowania zabiegu.
-          </span>
-        </div> */}
-        <div
-          style={{
-            display: "flex",
             justifyContent: "space-between",
 
             backgroundColor: "rgba(255, 129, 126, .1)",
-            // opacity: "0.2",
             width: "100%",
             height: "50px",
             lineHeight: "50px",
           }}
         >
-          <span style={{ marginLeft: "30px" }}>ZABIEG</span>
-
+          <span style={{ marginLeft: "20px" }}>ZABIEG</span>
           <span style={{ marginRight: "30px" }}>CENA</span>
-        </div>
+        </div> */}
         <ul>
-          {zabiegiArray.map((e) => {
+          {proceduresList.map((e) => {
+            if (e.title === "title") {
+              return (
+                <li
+                  style={{
+                    textAlign: "center",
+                    padding: "20px",
+                    borderBottom: "2px solid #E9E8E9",
+                    borderTop: "1px solid #E9E8E9",
+                  }}
+                  className="everyEven"
+                >
+                  <span
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {e.description}
+                  </span>
+                </li>
+              );
+            } else {
+              return (
+                <li
+                  style={{ borderBottom: "1px solid #E9E8E9" }}
+                  className="everyEven"
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      padding: "20px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        // maxWidth: "90%",
+                        textAlign: "center",
+                        margin: "auto 0px auto 0px",
+                        textAlign: "left",
+                        flexShrink: "1",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontWeight: "500",
+                        }}
+                      >
+                        {e.title}
+                      </span>
+                      <br />
+                      <span>{e.description}</span>
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        margin: "auto 0px auto 0px",
+                        textAlign: "right",
+                        marginLeft: "30px",
+                        // minWidth: "150px",
+                        flexShrink: "0",
+                      }}
+                    >
+                      {e.price.map((x) => {
+                        return <span>{x}</span>;
+                      })}
+
+                      <span>{e.time}</span>
+                    </div>
+                  </div>
+                </li>
+              );
+            }
+          })}
+          <li
+            style={{
+              padding: "20px",
+              borderBottom: "2px solid #E9E8E9",
+            }}
+            className="everyEven"
+          >
+            <span
+              style={{
+                fontWeight: "500",
+              }}
+            >
+              Indywidualne wkładki korekcyjne według cennika edupodologia.pl
+            </span>
+          </li>
+          {/* {zabiegiArray.map((e) => {
             return (
               <li
                 style={{ borderBottom: "1px solid #E9E8E9" }}
@@ -479,11 +875,19 @@ const Blog = (props) => {
                         return (
                           <span>
                             {e.title}
-                            <span style={{ float: "right", fontWeight: "300" }}>
-                              {e.price}
+                            <span
+                              style={{
+                                height: "50px",
+                                float: "right",
+                                fontWeight: "300",
+                                display: "flex",
+                                flexDirection: "column",
+                              }}
+                            >
+                              <span>{e.price}</span>
+                              <span>{e.time}</span>
                             </span>
                           </span>
-                          // <span></span>
                         );
                       })}
                     </span>
@@ -516,7 +920,7 @@ const Blog = (props) => {
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ul>
       </div>
     </section>
