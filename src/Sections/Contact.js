@@ -93,7 +93,7 @@ const Contact = (props) => {
                 />
               </div>
               <div
-                className="col-md-4 offset-md-1 mt-4 mt-md-0"
+                className="col-md-4 mt-4 mt-md-0"
                 style={{
                   // backgroundColor: "grey",
                   width: "100%",
