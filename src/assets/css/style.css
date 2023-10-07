@@ -96,7 +96,7 @@ section {
 }
 
 .btn {
-  background-color: #ff817e;
+  background-color: #debba9;
   border-radius: 0;
   color: #fff;
   display: inline-block;
@@ -135,13 +135,13 @@ section {
 }
 
 .video-btn:hover {
-  color: #ff817e;
+  color: #debba9;
 }
 
 .video-btn i {
   border-radius: 50%;
   background-color: #fcf5ee;
-  color: #ff817e;
+  color: #debba9;
   display: inline-block;
   line-height: 44px;
   text-align: center;
@@ -151,7 +151,7 @@ section {
 }
 
 .sec-heading {
-  margin-bottom: 70px;
+  margin-bottom: 32px;
   position: relative;
   text-align: center;
 }
@@ -225,7 +225,7 @@ section {
   .footer .foo-nav .mobile-menu {
     background: transparent;
     border: none;
-    color: #ff817e;
+    color: #debba9;
     display: block;
     font-size: 18px;
     position: absolute;
@@ -265,7 +265,7 @@ section {
 
 .primary-menu li a:hover,
 .footer .foo-nav li a:hover {
-  color: #ff817e;
+  color: #debba9;
 }
 
 @media screen and (max-width: 767px) {
@@ -311,7 +311,7 @@ section {
 }
 
 .banner span {
-  color: #ff817e;
+  color: #debba9;
   display: block;
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: 1.5px;
@@ -512,7 +512,7 @@ section {
 }
 
 .post:hover .btn {
-  background-color: #ff817e;
+  background-color: #debba9;
   color: #fff;
 }
 
@@ -774,8 +774,8 @@ section {
 }
 
 .team .single-memb .memb-social a:hover {
-  background-color: #ff817e;
-  border-color: #ff817e;
+  background-color: #debba9;
+  border-color: #debba9;
   color: #fff;
 }
 
@@ -806,11 +806,11 @@ section {
 }
 
 .contact address a:hover {
-  color: #ff817e;
+  color: #debba9;
 }
 
 .contact address span {
-  background-color: #ff817e;
+  background-color: #debba9;
   border-radius: 50%;
   color: #fff;
   display: block;
@@ -955,7 +955,7 @@ section {
 }
 
 .comments ul li a:hover {
-  color: #ff817e;
+  color: #debba9;
 }
 
 .comments ul li a:first-of-type {
@@ -1054,7 +1054,7 @@ section {
 }
 
 .comment-form button {
-  background-color: #ff817e;
+  background-color: #debba9;
   text-transform: uppercase;
   padding: 15px 30px;
 }
@@ -1089,7 +1089,7 @@ section {
 }
 
 .footer .foo-social a:hover {
-  color: #ff817e;
+  color: #debba9;
 }
 
 .footer .copyright {
@@ -1100,7 +1100,7 @@ section {
 }
 
 .footer .copyright a {
-  color: #ff817e;
+  color: #debba9;
 }
 
 /* Sidebar */
@@ -1357,5 +1357,5 @@ section {
 }
 
 .everyEven:nth-child(odd) {
-  background-color: rgba(255, 129, 126, 0.1);
+  background-color: rgba(222, 187, 169, 0.2);
 }

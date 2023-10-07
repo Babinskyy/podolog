@@ -22,14 +22,14 @@ const Navbar = (props) => {
     // Header start
     <header className={"header" + absHeader}>
       <div className="container">
-        <div className="row align-items-end">
+        <div className="row align-items-center">
           <div className="col-md-3">
             <NavLink to="/" className="logo">
               {/* <img src={require("../assets/images/logo1.png")} alt="" /> */}
               <img
                 src={require("../assets/images/podolog_logo.png")}
                 alt="logo"
-                style={{ height: "85px", width: "85px" }}
+                style={{ height: "110px", width: "110px" }}
               />
             </NavLink>
           </div>

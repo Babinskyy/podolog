@@ -722,7 +722,7 @@ const Blog = (props) => {
             </div>
           </div>
         </div>
-
+        {/* 
         <div style={{ position: "relative" }}>
           <div className="row">
             {proceduresObject.map((e, i) => {
@@ -738,7 +738,7 @@ const Blog = (props) => {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="container">
