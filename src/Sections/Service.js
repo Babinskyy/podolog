@@ -19,59 +19,45 @@ const Service = (props) => {
     // Service section start
     <section className="service">
       <OwlCarousel
-        autoplay
+        // autoplay
         className="service-caro"
         dots={false}
         items={4}
-        loop
+        // loop
         margin={5}
         nav={false}
-        responsive={breakPoints}
+        // responsive={breakPoints}
+        style={{ padding: "20px" }}
       >
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon11.jpg")} alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
         <div className="single-service">
           <img src={require("../assets/images/salon/salon30.jpg")} alt="" />
           <div className="service-hover">
             {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
-
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon4.jpg")} alt="" />
+        <div
+          className="single-service"
+          style={{ width: "1150px", marginLeft: "50px" }}
+        >
+          <img
+            src={require("../assets/images/salon/salon50.jpg")}
+            alt=""
+            style={{ margin: "0 auto" }}
+          />
           <div className="service-hover">
             {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon6.jpg")} alt="" />
+        <div className="single-service" style={{ margin: "0" }}>
+          <img alt="" />
           <div className="service-hover">
             {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
           </div>
         </div>
-
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon5.jpg")} alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-
         <div className="single-service">
           <img src={require("../assets/images/salon/salon31.jpg")} alt="" />
           <div className="service-hover">
             {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon7.jpg")} alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-            {/* <span>Body Treatment</span> */}
           </div>
         </div>
       </OwlCarousel>
