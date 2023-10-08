@@ -368,6 +368,7 @@ section {
 @media screen and (max-width: 991px) {
   .banner {
     text-align: center;
+    margin-top: 50px;
   }
   .banner .spa-img {
     display: none;

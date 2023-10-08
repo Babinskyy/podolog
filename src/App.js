@@ -26,7 +26,10 @@ const App = (props) => {
 
   return (
     <BrowserRouter basename={basename}>
-      <div className="App">
+      <div
+        className="App"
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
         <Layout>
           <Switch>
             <Route path="/" component={Home} exact />

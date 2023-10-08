@@ -5,7 +5,7 @@ import Appointment from "../../Sections/Appointment";
 const services = (props) => {
   return (
     <Fragment>
-      <Procedure />
+      {/* <Procedure /> */}
       <Appointment />
     </Fragment>
   );

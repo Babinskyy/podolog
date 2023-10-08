@@ -18,7 +18,7 @@ const Home = (props) => {
       <Banner />
       <AboutSec />
       <Service />
-      <Procedure />
+      {/* <Procedure /> */}
 
       <Contact />
     </React.Fragment>

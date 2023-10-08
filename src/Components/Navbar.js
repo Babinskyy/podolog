@@ -29,7 +29,7 @@ const Navbar = (props) => {
               <img
                 src={require("../assets/images/podolog_logo.png")}
                 alt="logo"
-                style={{ height: "110px", width: "110px" }}
+                style={{ height: "130px", width: "130px", marginTop: "20px" }}
               />
             </NavLink>
           </div>

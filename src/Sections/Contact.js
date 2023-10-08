@@ -33,7 +33,7 @@ const Contact = (props) => {
 
   return (
     // Contact section start
-    <section className="contact">
+    <section className="contact" style={{ flexGrow: "1" }}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-md-10 m-auto">
@@ -59,7 +59,7 @@ const Contact = (props) => {
             flexDirection: "row",
             justifyContent: "space-between",
             flexWrap: "wrap",
-            alignItems: "center",
+            // alignItems: "center",
           }}
         >
           <div style={{ padding: "20px 0px 20px 0px", margin: "0 auto" }}>
@@ -89,9 +89,9 @@ const Contact = (props) => {
               alt="clinic-image"
               style={{
                 border: 0,
-                minHeight: "330px",
+                height: "300px",
                 width: "330px",
-                padding: "20px 0px 20px 0px",
+                // padding: "20px 0px 20px 0px",
               }}
             />
           </div>
@@ -100,9 +100,9 @@ const Contact = (props) => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1379.609922018874!2d18.563226652300973!3d54.44143732111713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd0a910526f167%3A0x362a88f7760008c8!2sTadeusza%20Ko%C5%9Bciuszki%2010%2C%2081-759%20Sopot!5e0!3m2!1sen!2spl!4v1663511679413!5m2!1sen!2spl"
               style={{
                 border: 0,
-                minHeight: "330px",
+                height: "300px",
                 width: "330px",
-                padding: "20px 0px 20px 0px",
+                // padding: "20px 0px 20px 0px",
               }}
               allowFullScreen
               loading="lazy"
