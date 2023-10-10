@@ -17,8 +17,16 @@ const breakPoints = {
 const Service = (props) => {
   return (
     // Service section start
-    <section className="service">
-      <OwlCarousel
+    <section
+      className="service"
+      style={{
+        width: "99%",
+        display: "flex",
+        justifyContent: "space-around",
+        margin: "0 auto",
+      }}
+    >
+      {/* <OwlCarousel
         // autoplay
         className="service-caro"
         dots={false}
@@ -28,39 +36,20 @@ const Service = (props) => {
         nav={false}
         // responsive={breakPoints}
         style={{ padding: "20px" }}
-      >
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon30.jpg")} alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-        <div
-          className="single-service"
-          style={{ width: "1150px", marginLeft: "50px" }}
-        >
-          <img
-            src={require("../assets/images/salon/salon50.jpg")}
-            alt=""
-            style={{ margin: "0 auto" }}
-          />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-        <div className="single-service" style={{ margin: "0" }}>
-          <img alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-        <div className="single-service">
-          <img src={require("../assets/images/salon/salon31.jpg")} alt="" />
-          <div className="service-hover">
-            {/* <img src={require("../assets/images/icons/1.png")} alt="" /> */}
-          </div>
-        </div>
-      </OwlCarousel>
+      > */}
+      <div className="single-service" style={{}}>
+        <img src={require("../assets/images/salon/salon30.jpg")} alt="" />
+        <div className="service-hover"></div>
+      </div>
+      <div className="single-service" style={{ flexBasis: "46.3%" }}>
+        <img src={require("../assets/images/salon/salon50.jpg")} alt="" />
+        <div className="service-hover"></div>
+      </div>
+      <div className="single-service" style={{}}>
+        <img src={require("../assets/images/salon/salon31.jpg")} alt="" />
+        <div className="service-hover"></div>
+      </div>
+      {/* </OwlCarousel> */}
     </section>
     // Service section end
   );
