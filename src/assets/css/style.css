@@ -156,6 +156,18 @@ section {
   text-align: center;
 }
 
+.sec-heading .foo-social a {
+  color: #222222;
+  display: inline-block;
+  font-size: 34px;
+  line-height: 0.8;
+  padding: 0 10px;
+}
+
+.sec-heading .foo-social a:hover {
+  color: rgb(0, 132, 255);
+}
+
 .sec-heading img {
   max-width: 84px;
   margin: 0 auto 40px;
@@ -174,7 +186,7 @@ section {
 .sec-heading .sec-title {
   color: #1e2528;
   font-size: 42px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 .footer .foo-nap {
   width: 500px;

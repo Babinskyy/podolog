@@ -38,7 +38,24 @@ const Contact = (props) => {
         <div className="row">
           <div className="col-lg-8 col-md-10 m-auto">
             <div className="sec-heading">
+              
+              <div className="foo-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100061828223350"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="ti-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/podologsopot?igshid=MTNiYzNiMzkwZA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="ti-instagram"></i>
+              </a>
               <h3 className="sec-title">Zostańmy w kontakcie</h3>
+            </div>
               <p style={{ textAlign: "left" }}>
                 <p style={{ textAlign: "center" }}>
                   Nasz salon znajduje się w samym sercu Sopotu
