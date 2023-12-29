@@ -1081,12 +1081,16 @@ section {
 }
 
 .footer .foo-social a {
-  border-right: 1px solid #b1b4bb;
+  /* border-right: 1px solid #b1b4bb; */
   color: #3a414e;
   display: inline-block;
   font-size: 14px;
   line-height: 0.8;
   padding: 0 10px;
+}
+
+.footer .foo-social a:first-child {
+  border-right: 1px solid #b1b4bb;
 }
 
 .footer .foo-social a:hover {

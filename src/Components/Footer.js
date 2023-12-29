@@ -33,16 +33,27 @@ const footer = (props) => {
                 </li>
               </ul>
             </nav>
-            {/* <div className="foo-social">
-              <Link to="#">
+            <div className="foo-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100061828223350"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="ti-facebook"></i>
-              </Link>
-
-              <Link to="#">
+              </a>
+              <a
+                href="https://www.instagram.com/podologsopot?igshid=MTNiYzNiMzkwZA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="ti-instagram"></i>
-              </Link>
+              </a>
+
+              {/* <Link to="#">
+                <i className="ti-instagram"></i>
+              </Link> */}
             </div>
-            <p className="copyright">
+            {/* <p className="copyright">
               &copy; COPYRIGHT {`${new Date().getFullYear()} `}
               <a href="https://geeko.software/" target="_blank">
                 geeko.software
