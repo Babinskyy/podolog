@@ -489,21 +489,6 @@ const Blog = (props) => {
               );
             }
           })}
-          <li
-            style={{
-              padding: "20px",
-              borderBottom: "2px solid #E9E8E9",
-            }}
-            className="everyEven"
-          >
-            <span
-              style={{
-                fontWeight: "500",
-              }}
-            >
-              Indywidualne wkładki korekcyjne według cennika edupodologia.pl
-            </span>
-          </li>
           {/* {zabiegiArray.map((e) => {
             return (
               <li
