@@ -1,7 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
 import axios from "../../axios-orders";
-import Loader from "../../Components/Loader";
-import Post from "../../Components/Post";
 
 const Blog = (props) => {
   const [procedures, setProcedures] = useState(null);
@@ -20,363 +18,7 @@ const Blog = (props) => {
         console.log(err);
       });
   }, []);
-  const proceduresObject = [
-    {
-      title: "Zabieg podologiczny",
-      excerpt: "od 120 zł",
-    },
-    {
-      title: "Usunięcie odcisku",
-      excerpt: "od 30 zł",
-    },
-    {
-      title: "Konsultacja podologiczna",
-      excerpt: "od 0 zł",
-    },
-  ];
-  const zabiegiArray = [
-    {
-      titles: [
-        {
-          title: "Konsultacja podologiczna",
-          price: "100,-",
-          time: "30 min",
-        },
-      ],
-      descriptions: [],
-    },
-    {
-      titles: [
-        {
-          title: "Konsultacja podologiczna przy umówionym zabiegu",
-          price: "Bezpłatna",
-        },
-      ],
-      descriptions: [],
-    },
-    {
-      titles: [
-        {
-          title: "Podstawowy zabieg podologiczny",
-          price: "120,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje pedicure kosmetyczny, skrócenie paznokci, opracowanie skórek, usunięcie fizjologicznych zmian za pomocą frezarki podologicznej)",
-          price: "",
-        },
-        {
-          description: "- z malowaniem lakierem tradycyjnym",
-          price: "140,-",
-        },
-        {
-          description: "- z malowaniem lakierem hybrydowym",
-          price: "180,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Specjalistyczny zabieg podologiczny",
-          price: "170,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje podstawowy zabieg podologiczny, usunięcie odcisku, modzela i zrogowaceń)",
-          price: "",
-        },
-        {
-          description: "- z malowaniem lakierem tradycyjnym",
-          price: "190,-",
-        },
-        {
-          description: "- z malowaniem lakierem hybrydowym",
-          price: "220,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Rozszerzony zabieg podologiczny",
-          price: "250,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje podstawowy i specjalistyczny zabieg podologiczny; opracowanie stopy z wypryskiem modzelowatym, rogowcem, zmianami łuszczycowymi, licznymi odciskami i modzelami, głębokimi rozpadlinami, bolesnymi zmianami hiperkeratotycznymi; wykonanie odciążeń, założenie opatrunków)",
-          price: "250,-",
-        },
-        {
-          description: "- z malowaniem lakierem tradycyjnym",
-          price: "270,-",
-        },
-        {
-          description: "- z malowaniem lakierem hybrydowym",
-          price: "300,-",
-        },
-        {
-          description:
-            "*lakier tradycyjny i lakier hybrydowy nakładamy tylko gdy nie ma ku temu przeciwwskazań",
-          price: "",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Opracowanie tylko przodostopia",
-          price: "100,-",
-        },
-      ],
-      descriptions: [
-        {
-          description: "(cena obejmuje obcięcie paznokci, opracowanie skórek)",
-          price: "",
-        },
-        {
-          description: "- z malowaniem lakierem tradycyjnym",
-          price: "120,-",
-        },
-        {
-          description: "- z malowaniem lakierem hybrydowym",
-          price: "150,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Opracowanie pękających pięt",
-          price: "150,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje usunięcie zrogowaceń, pęknięć i rozpadlin, założenie specjalistycznego opatrunku)",
-          price: "",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Obcięcie i oczyszczenie paznokci zmienionych chorobowo",
-          price: "100 - 200,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(zakażenia bakteryjne, grzybicze, onycholiza, paznokcie przerośnięte/dystroficzne)",
-          price: "",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Usunięcie odcisku / modzela",
-          price: "80,-",
-        },
-      ],
-      descriptions: [
-        {
-          description: "- każdy kolejny na tej samej wizycie",
-          price: "30,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Terapia brodawek wirusowych*",
-          price: "100 - 200,-",
-        },
-      ],
-      descriptions: [
-        {
-          description: "a) brodawki pojedyncze",
-          price: "",
-        },
-        {
-          description:
-            "- pierwsza wizyta (rozpoczęcie terapii: oczyszczenie, diagnoza, wybranie metody terapii, zalecenia pozabiegowe)",
-          price: "130,-",
-        },
-        {
-          description: "- kolejna wizyta (kontynuacja terapii)",
-          price: "100,-",
-        },
-        {
-          description: "b) brodawki mnogie",
-          price: "",
-        },
-        {
-          description:
-            "- pierwsza wizyta (rozpoczęcie terapii: oczyszczenie, diagnoza, wybranie metody terapii, zalecenia pozabiegowe)",
-          price: "180,-",
-        },
-        {
-          description: "- kolejna wizyta (kontynuacja terapii)",
-          price: "130,-",
-        },
-        {
-          description: "*do cen wliczony jest opatrunek i odciążenie",
-          price: "",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Usunięcie krwiaka podpaznokciowego",
-          price: "150,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje odbarczenie krwiaka, zabezpieczenie pola zabiegowego i założenie opatrunku)",
-          price: "",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Protetyka paznokcia",
-          price: "100,-",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "(cena obejmuje oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji)",
-          price: "",
-        },
-        {
-          description: "Protetyka do usługi",
-          price: "50,-",
-        },
-        {
-          description: "Ściągnięcie masy wykonanej w innym gabinecie",
-          price: "50,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Terapia wrastającego paznokcia",
-          price: "",
-        },
-      ],
-      descriptions: [
-        {
-          description:
-            "- korekta (usunięcie drażniącego elementu, założenie opatrunku)",
-          price: "130,-",
-        },
-        {
-          description: "- założenie klamry ortonyksyjnej",
-          price: "",
-        },
-        {
-          description:
-            "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 - na jeden paznokieć",
-          price: "190,-",
-        },
-        {
-          description:
-            "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 - na dwa paznokcie na tej samej wizycie",
-          price: "350,-",
-        },
-        {
-          description: "- przełożenie klamry ortonyksyjnej",
-          price: "100,-",
-        },
-        {
-          description: "- wizyta kontrolna bez przełożenia klamry",
-          price: "70,-",
-        },
-        {
-          description: "- założenie rurki Sulci-Protector",
-          price: "80,-",
-        },
-        {
-          description:
-            "- zakończenie terapii - ściągnięcie klamry ortonyksyjnej",
-          price: "100,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Tamponada i opatrunki",
-          price: "",
-        },
-      ],
-      descriptions: [
-        {
-          description: "- założenie tamponady z preparatem",
-          price: "60,-",
-        },
-        {
-          description: "- założenie tamponady z preparatem do usługi",
-          price: "20,-",
-        },
-        {
-          description: "- opatrunek",
-          price: "30,-",
-        },
-      ],
-    },
-    {
-      titles: [
-        {
-          title: "Dodatkowe odciążenia",
-          price: "20 - 80,-",
-        },
-      ],
-      descriptions: [],
-    },
-    {
-      titles: [
-        {
-          title: "Wkładki PWO15 odciążające",
-          price: "170,-",
-        },
-      ],
-      descriptions: [],
-    },
-    {
-      titles: [
-        {
-          title: "Taping podologiczny (tzw. plastrowanie) do zabiegu",
-          price: "20 - 50,-",
-        },
-      ],
-      descriptions: [],
-    },
-    {
-      titles: [
-        {
-          title: "Pobranie materiału do badań laboratoryjnych",
-          price: "150 - 300,-",
-        },
-      ],
-      descriptions: [],
-    },
-  ];
+
 
   const proceduresList = [
     {
@@ -392,7 +34,7 @@ const Blog = (props) => {
       time: "30 min",
     },
     {
-      title: "Konsultacja podologiczna przy umówionym zabiegu",
+      title: "Konsultacja podologiczna przy pełynm zabiegu",
       description: "",
       price: ["Bezpłatna"],
       time: "",
@@ -401,7 +43,7 @@ const Blog = (props) => {
       title: "Opracowanie paznokci zdrowych u stóp",
       description:
         "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek)",
-      price: ["80 zł"],
+      price: ["100 zł"],
       time: "30 min",
     },
     {
@@ -419,15 +61,15 @@ const Blog = (props) => {
     {
       title: "Pedicure express",
       description:
-        "(opracowanie zrogowaceń podeszwy stopy frezarką, omówienie domowej pielęgnacji , aplikacja kremu)",
-      price: ["100 zł"],
+        "(opracowanie zrogowaceń podeszwy stopy frezarką, omówienie domowej pielęgnacji , aplikacja kremu, bez skracania i opracowania paznokci)",
+      price: ["120 zł"],
       time: "30 min",
     },
     {
       title: "Pedicure kosmetyczny (frezarkowy) bez malowania",
       description:
         "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek, opracowanie podeszwy stopy frezarką, omówienie pielęgnacji domowej, aplikacja kremu)",
-      price: ["130 zł"],
+      price: ["160 zł"],
       time: "60 min",
     },
     {
@@ -441,21 +83,22 @@ const Blog = (props) => {
         "Pedicure podologiczny - pierwsza wizyta z konsultacją ortopodologiczną",
       description:
         "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek,  opracowanie patologicznych zrogowaceń podeszwy -usunięcie odcisków i modzeli za pomocą narzędzi podologicznych, omówienie pielęgnacji domowej, aplikacja kremu)",
-      price: ["240 zł"],
+      price: ["250 zł"],
       time: "2 godz",
     },
     {
-      title: "Pedicure podologiczny - kolejna wizyta",
+      title:
+        "Pedicure podologiczny - kolejna wizyta dotyczy wizyt umawianych maksymalnie co 6-8 tygodni",
       description:
         "(skrócenie paznokci i nadanie im kształtu, opracowanie skórek, opracowanie patologicznych zrogowaceń podeszwy – usunięcie odcisków i modzeli za pomocą narzędzi podologicznych, omówienie pielęgnacji domowej, aplikacja kremu, zalecenia pozabiegowe)",
-      price: ["200 zł"],
+      price: ["220 zł"],
       time: "2 godz",
     },
     {
       title: "Pedicure podologiczny rozszerzony",
       description:
         "Pedicure podologiczny podstawowy plus opracowanie dużych hiperkeratoz w tym zaawansowanej keratolizy dziobatej, rogowca, liszaja, odcisków mnogich , modzele (duże powierzchnie)",
-      price: ["2 godz – 250zł", "ponad 2 godz – 350 zł"],
+      price: ["2 godz – 280zł", "ponad 2 godz – 350 zł"],
       time: "",
     },
     {
@@ -560,21 +203,21 @@ const Blog = (props) => {
       title:
         "Założenie klamry na 1 paznokieć  - rozpoczęcie terapii klamrą ortonyksyjną",
       description: "",
-      price: ["200 zł"],
+      price: ["240 zł"],
       time: "40 min",
     },
     {
       title:
         "Założenie klamry na 2 paznokcie - rozpoczęcie terapii klamrą ortonyksyjną",
       description: "",
-      price: ["380 zł"],
+      price: ["440 zł"],
       time: "70 min",
     },
     {
       title:
         "Kontrola w trakcie terapii wrastającego paznokcia / przełożenie klamry",
       description: "",
-      price: ["120 zł"],
+      price: ["150 zł"],
       time: "30 min",
     },
     {
@@ -587,9 +230,9 @@ const Blog = (props) => {
     {
       title: "Usunięcie wrastającego fragmentu paznokcia",
       description:
-        "opracowanie paznokcia i rany, rozpoczęcie leczenia wrastającego paznokcia, usunięcie wrastającego fragmentu, aplikacja opatrunku specjalistycznego",
+        "Usunięcie wrastającego fragmentu paznokcia – opracowanie paznokcia i rany, rozpoczęcie leczenia wrastającego paznokcia, usunięcie wrastającego fragmentu, aplikacja opatrunku specjalistycznego",
       price: ["200 zł"],
-      time: "60 min",
+      time: "30 min",
     },
     {
       title:
@@ -607,7 +250,7 @@ const Blog = (props) => {
       time: "",
     },
     {
-      title: "Protetyka paznokcia – pierwsza wizyta",
+      title: "Protetyka paznokcia",
       description:
         "Oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji",
       price: ["100 zł"],
@@ -616,14 +259,20 @@ const Blog = (props) => {
     {
       title: "Protetyka paznokcia metodą Unguisan",
       description: "",
-      price: ["1 paznokieć - 100zł"],
+      price: ["1 paznokieć - 150zł"],
       time: "40 min",
+    },
+    {
+      title: "Protetyka paznokcia metodą Unguisan do usługi podologicznej",
+      description: "",
+      price: ["100zł"],
+      time: "30 min",
     },
     {
       title: "Protetyka paznokcia – do usługi",
       description:
         "Oczyszczenie paznokcia, aplikacja i opracowanie materiału do rekonstrukcji",
-      price: ["50 zł"],
+      price: ["90 zł"],
       time: "15 min",
     },
     {
@@ -702,7 +351,13 @@ const Blog = (props) => {
     {
       title: "Badanie Bakteriologiczne",
       description: "",
-      price: ["130 zł"],
+      price: ["150 zł"],
+      time: "",
+    },
+    {
+      title: "Indywidualne wkładki korekcyjne",
+      description: "",
+      price: ["400-500 zł"],
       time: "",
     },
   ];
